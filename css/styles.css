@@ -493,9 +493,3 @@ img {
   visibility: visible;
   pointer-events: initial;
 }
-
-.backdrop p {
-  width: fit-content;
-  background-color: white;
-  padding: 30px;
-}
