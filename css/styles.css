@@ -52,7 +52,7 @@ img {
 }
 .logo {
   color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -88,7 +88,7 @@ img {
   color: #404bbf;
 }
 .nav-adress.active::after {
-  content: "";
+  content: '';
   display: block;
 
   position: absolute;
@@ -468,4 +468,34 @@ img {
 }
 .footer-icons {
   fill: #f4f4fd;
+}
+
+/* Modal Window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(46, 47, 66, 0.4);
+  width: 100vw;
+  height: 100vh;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.backdrop p {
+  width: fit-content;
+  background-color: white;
+  padding: 30px;
 }
