@@ -525,3 +525,43 @@ img {
   line-height: 1.5em;
   letter-spacing: 0.02em;
 }
+.modal-form {
+}
+.form {
+}
+.form-label-user {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16em;
+  letter-spacing: 0.04em;
+}
+.form-field {
+  position: relative;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: none;
+}
+.form-input:focus {
+  border: 1px solid #4d5ae5;
+}
+.form-icon {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+
+  fill: #2e2f42;
+}
+.form-input:focus + .form-icon {
+  fill: #4d5ae5;
+}
