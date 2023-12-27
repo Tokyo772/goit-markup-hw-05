@@ -656,3 +656,38 @@ img {
 .form-comment:focus {
   border: 1px solid #4d5ae5;
 }
+
+/* Custom Checkbox */
+
+.form-agreement {
+  display: block;
+  margin-bottom: 24px;
+
+  color: #8e8f99;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+}
+.checkbox {
+}
+.form-agreement-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 1px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+.form-agreement-icon {
+  opacity: 0;
+}
+.form-agreement-link {
+  color: #4d5ae5;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+}
