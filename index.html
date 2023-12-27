@@ -517,7 +517,7 @@
             </div>
           </div>
 
-          <div class="form-wrapper">
+          <div class="form-wrapper form-wrapper-comment">
             <label for="form-comment" class="form-label"> Comment </label>
             <textarea
               name="user-commnent"
@@ -528,7 +528,12 @@
           </div>
 
           <label class="form-agreement">
-            <input class="checkbox" type="checkbox" name="" />
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user_agreement"
+              value="false"
+              checked />
             <span class="form-agreement-checkbox">
               <svg class="form-agreement-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-accept"></use>
@@ -537,6 +542,7 @@
             I accept the terms and conditions of the
             <a class="form-agreement-link" href="">Privacy Policy</a>
           </label>
+          <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
