@@ -55,7 +55,7 @@
       <section class="hero section">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button button-hero">
+          <button type="button" class="button button-hero" data-modal-open>
             Order Service
           </button>
         </div>
@@ -466,9 +466,13 @@
     </footer>
 
     <!-- Modal Window -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button" aria-label="modal close button">
+        <button
+          class="modal-btn"
+          type="button"
+          aria-label="modal close button"
+          data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-x-close"></use>
           </svg>
@@ -493,7 +497,7 @@
             <label class="form-label" for="user_phone">Phone</label>
             <div class="form-field">
               <input
-                type="number"
+                type="tel"
                 class="form-input"
                 id="user_phone"
                 name="user_phone" />
@@ -549,5 +553,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
